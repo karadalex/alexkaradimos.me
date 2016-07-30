@@ -1,10 +1,10 @@
 var express = require('express');
-var app = express();
+var router = express.Router();
 
-
-app.get('/', function (req, res, next) {
+/* GET home page. */
+router.get('/', function(req, res, next) {
   var options = {
-    root: __dirname + '/client/',
+    root: __dirname + '/../../client/',
     dotfiles: 'deny',
     headers: {
         'x-timestamp': Date.now(),
@@ -17,11 +17,9 @@ app.get('/', function (req, res, next) {
       res.status(err.status).end();
     }
     else {
-      console.log('Sent:', fileName);
+      console.log('Sent:', 'index.html');
     }
   });
 });
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
+module.exports = router;

@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Monsieur La Doulaise';
+  font-style: normal;
+  font-weight: 100;
+  src: url(fonts/MonsieurLaDoulaise-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Lato Hairline';
+  font-style: normal;
+  font-weight: 100;
+  src: url(fonts/Lato-Hairline.ttf);
+}
+
+@font-face {
+  font-family: 'Lato Hairline Italic';
+  font-style: normal;
+  font-weight: 100;
+  src: url(fonts/Lato-HairlineItalic.ttf);
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+	background-color: #12110D;
+	color: #F3E2B3;
+}
+
+.nav li a:focus, .nav li a:hover {
+  background-color: RGBA(92, 84, 56, 0.25);
+}
+
+nav ul li h2 {
+  font-family: 'Lato Hairline Italic';
+  text-align: center;
+  color: #F3E2B3;
+}
+
+div#AlexKaradimos {
+  font-family: 'Monsieur La Doulaise', cursive;
+  font-size: 100px;
+  text-align: center;
+  color: #D7B75E;
+  margin: 10rem;
+}
+
+hr {
+	color: #F3E2B3; 
+  height: 1px;
+}
+
+footer {
+  font-family: 'Lato Hairline';
+  font-size: 20px;
+  position: relative;
+  margin-top: 10rem;
+  bottom: 20px;
+}
