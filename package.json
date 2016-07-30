@@ -5,7 +5,8 @@
   "main": "dist/server/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node src/server/main.js"
+    "dev": "node src/server/main.js",
+    "start": "node build/server/main.js"
   },
   "author": "",
   "license": "ISC",
