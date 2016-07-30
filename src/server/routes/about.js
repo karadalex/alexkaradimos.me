@@ -4,20 +4,21 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   var options = {
-    root: __dirname + '/../../client/',
+    root: __dirname + '/../../client/views/',
     dotfiles: 'deny',
     headers: {
         'x-timestamp': Date.now(),
         'x-sent': true
     }
   };
-  res.sendFile('index.html', options, function (err) {
+  var fileName = 'about.html';
+  res.sendFile(fileName, options, function (err) {
     if (err) {
       console.log(err);
       res.status(err.status).end();
     }
     else {
-      console.log('GET', '/');
+      console.log('GET', '/'+fileName);
     }
   });
 });
