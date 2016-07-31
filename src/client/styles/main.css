@@ -19,6 +19,13 @@
   src: url(fonts/Lato-HairlineItalic.ttf);
 }
 
+@font-face {
+  font-family: 'Lato Light';
+  font-style: normal;
+  font-weight: 10;
+  src: url(fonts/Lato-Light.ttf);
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -29,6 +36,28 @@ body {
 	color: #F3E2B3;
 }
 
+h1 {
+  font-family: 'Lato Hairline Italic';
+  font-size: 100px;
+  text-align: center;
+  color: #D7B75E;
+  
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+p {
+  font-family: 'Lato Light';
+  color: #F3E2B3;
+  font-size: 22px;
+}
+
+a, a:hover {
+  text-decoration: none;
+  font-family: 'Lato Light';
+  font-size: 30px;
+}
+
 .nav li a:focus, .nav li a:hover {
   background-color: RGBA(92, 84, 56, 0.25);
 }
@@ -37,6 +66,51 @@ nav ul li h2 {
   font-family: 'Lato Hairline Italic';
   text-align: center;
   color: #F3E2B3;
+}
+
+#ham-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+#side-nav-bar {
+  display: none;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 45%;
+  background-color: #D7B75E;
+  color: #12110D;
+  z-index: 100;
+}
+
+#side-nav-bar a {
+  color: #12110D;
+}
+
+#side-nav-bar ul {
+  list-style-type: none;
+  margin-top: 80px;
+  padding-left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+#side-nav-bar ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#side-nav-bar ul li:hover {
+  background-color: RGBA(92, 84, 56, 0.5);
+}
+
+#hide-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
 div#AlexKaradimos {
@@ -57,5 +131,5 @@ footer {
   font-size: 20px;
   position: relative;
   margin-top: 10rem;
-  bottom: 20px;
+  bottom: 18px;
 }
