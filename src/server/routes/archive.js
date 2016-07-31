@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
         'x-sent': true
     }
   };
-  var fileName = 'contact.html';
+  var fileName = 'archive.html';
   res.sendFile(fileName, options, function (err) {
     if (err) {
       console.log(err);
