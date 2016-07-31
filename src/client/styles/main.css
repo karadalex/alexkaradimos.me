@@ -141,3 +141,25 @@ footer {
   margin-top: 10rem;
   bottom: 18px;
 }
+
+
+
+@media only screen and (max-width: 400px) { 
+  div#AlexKaradimos {
+    font-size: 80px;
+    margin: 1rem;
+  }
+  
+  #side-nav-bar {
+    width: 60%;
+  }
+  
+  #side-nav-bar ul li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  
+  #side-nav-bar ul li a {
+    font-size: 22px;
+  }
+}
