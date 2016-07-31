@@ -121,6 +121,14 @@ div#AlexKaradimos {
   margin: 10rem;
 }
 
+div.background-image {
+  background-image: url(../media/img/sea.jpeg);
+  background-size: 100% 45rem;
+  background-repeat: no-repeat;
+  height: 35rem;
+  margin-bottom: 6rem;
+}
+
 hr {
 	color: #F3E2B3; 
   height: 1px;
