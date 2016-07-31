@@ -114,6 +114,16 @@ nav ul li h2 {
   right: 20px;
 }
 
+.shadow-show {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: RGBA(20, 20, 20, 0.7);
+  z-index: 5;
+}
+
 div#AlexKaradimos {
   font-family: 'Monsieur La Doulaise', cursive;
   font-size: 100px;
@@ -122,12 +132,18 @@ div#AlexKaradimos {
   margin: 10rem;
 }
 
-div.background-image {
-  background-image: url(../media/img/sea.jpeg);
+div.header-image {
   background-size: 100% 45rem;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   height: 35rem;
   margin-bottom: 6rem;
+}
+
+.background-image {
+  background-size: auto 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 hr {
