@@ -72,6 +72,7 @@ nav ul li h2 {
   position: fixed;
   top: 20px;
   right: 20px;
+  z-index: 10;
 }
 
 #side-nav-bar {
