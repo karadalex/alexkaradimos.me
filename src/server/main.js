@@ -19,13 +19,13 @@ app.use(helmet());
 
 // Routes
 app.use('/', home);
-app.use('/about', about);
-app.use('/archive', archive);
-app.use('/blog', blog);
-app.use('/contact', contact);
-app.use('/cv', cv);
-app.use('/portfolio', portfolio);
-app.use('/press',press);
+app.use('/about(.html)?', about);
+app.use('/archive(.html)?', archive);
+app.use('/blog(.html)?', blog);
+app.use('/contact(.html)?', contact);
+app.use('/cv(.html)?', cv);
+app.use('/portfolio(.html)?', portfolio);
+app.use('/press(.html)?',press);
 app.use('/api', api);
 
 // Static Files
