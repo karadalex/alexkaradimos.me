@@ -1,9 +1,6 @@
 # Installed packages
 node_modules/
-src/client/bower_components/
-
-# Builds
-build/
+public/bower_components/
 
 # Files
 *.log

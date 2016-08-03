@@ -46,6 +46,12 @@ h1 {
   margin-bottom: 100px;
 }
 
+h2 {
+  font-family: 'Lato Hairline Italic';
+  font-size: 35px;
+  color: #F3E2B3;
+}
+
 p {
   font-family: 'Lato Light';
   color: #F3E2B3;
@@ -55,6 +61,7 @@ p {
 a, a:hover {
   text-decoration: none;
   font-family: 'Lato Light';
+  color: #F3E2B3;
   font-size: 30px;
 }
 
@@ -63,9 +70,7 @@ a, a:hover {
 }
 
 nav ul li h2 {
-  font-family: 'Lato Hairline Italic';
   text-align: center;
-  color: #F3E2B3;
 }
 
 #ham-menu {
@@ -130,6 +135,12 @@ div#AlexKaradimos {
   text-align: center;
   color: #D7B75E;
   margin: 10rem;
+}
+
+.emphasize {
+  color: #D7B75E;
+  font-family: 'Lato Light';
+  font-size: 22px;
 }
 
 div.header-image {

@@ -1,0 +1,53 @@
+doctype html
+html(lang='en')
+  head
+    title Alex Karadimos
+    
+    meta(charset='UTF-8')
+    meta(name='description', content='My Personal Website, Alex Karadimos')
+    meta(name='keywords', content='Alex Karadimos, Alexios, Personal Website, Portfolio, Curriculum Vitae, CV, About, Press, Blog, Contact')
+    meta(name='author', content='Alex Karadimos')
+    meta(name='viewport', content='initial-scale=1')
+    
+    link(rel='stylesheet', href='/bower_components/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/styles/main.css')
+    
+    script(src='/scripts/main.js')
+    
+  body
+    #AlexKaradimos Alex Karadimos
+    
+    .container
+      nav.navbar
+        .container-fluid
+          ul.nav.navbar-nav
+            li
+              a(href='/home') 
+                h2 Home
+            li
+              a(href='/about')
+                h2 About
+            li
+              a(href='/contact')
+                h2 Contact
+            li
+              a(href='/blog')
+                h2 Blog
+            li
+              a(href='/portfolio')
+                h2 Portfolio
+            li
+              a(href='/cv')
+                h2 Curriculum Vitae
+            li
+              a(href='/archive')
+                h2 Archive
+            li
+              a(href='/press')
+                h2 Press
+    
+    include templates/footer
+    
+    script(src='/bower_components/jquery/dist/jquery.min.js')
+    script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
