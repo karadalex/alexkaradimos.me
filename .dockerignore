@@ -1,0 +1,6 @@
+# Ignore git structure
+.git/
+.gitignore
+
+# Ignore unnecessary files
+web.config
