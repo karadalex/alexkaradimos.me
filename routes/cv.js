@@ -5,7 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('cv', {
     title: 'Curriculum Vitae',
-    image: 'admiring.jpeg'
+    image: 'admiring.jpeg',
+    classList: 'h1-header-xs'
   });
 });
 
