@@ -1,6 +1,14 @@
 extends templates/layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  div.container
+    h2= error.status
+    
+    case error.status
+      when 404
+        p The page you are looking for could not be found
+      when 500
+        p Our Server encountered an unexpected failure. Please try again later.
+        
+    if error.stack
+      pre #{error.stack}
