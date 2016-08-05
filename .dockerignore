@@ -2,5 +2,10 @@
 .git/
 .gitignore
 
+# Ignore public_dev, only copy the built "public" folder
+public_dev/
+
 # Ignore unnecessary files
 web.config
+.bowerrc
+bower.json
