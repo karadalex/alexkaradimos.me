@@ -1,6 +1,9 @@
 # Installed packages
 node_modules/
-public/bower_components/
+public_dev/bower_components/
+
+# Build
+public/
 
 # Files
 *.log
