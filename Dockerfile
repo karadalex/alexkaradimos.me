@@ -7,14 +7,19 @@ MAINTAINER Alex Karadimos
 RUN cd ~ && \
     curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh && \
     sudo bash nodesource_setup.sh && \
-    sudo apt-get install build-essential && \
+    sudo apt-get install build-essential
 
 COPY ./ /app
 RUN chmod +x /app/bin/www
 
+ENV NODE_ENV=production
+ENV PORT=3000
+
 RUN sudo npm install -g pm2 && \
     pm2 start /app/bin/www
 
-RUN sudo apt-get install nginx && \
+RUN apt-get install -y nginx && \
     mv ./nginx.conf /etc/nginx/sites-available/default && \
     sudo systemctl restart nginx
+
+EXPOSE 80, 443
