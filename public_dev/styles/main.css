@@ -80,6 +80,10 @@ nav ul li h2 {
   z-index: 10;
 }
 
+#ham-menu:hover, #hide-menu:hover {
+    cursor: pointer;
+}
+
 #side-nav-bar {
   display: none;
   position: fixed;

@@ -19,7 +19,6 @@ var cv = require('./routes/cv');
 var portfolio = require('./routes/portfolio');
 var press = require('./routes/press');
 var api = require('./routes/api');
-var errors = require('./routes/errors');
 
 // Initialize Express App & Vendor Middlewares
 var app = express();

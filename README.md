@@ -5,10 +5,11 @@ This is a website made with NodeJS, ExpressJS and other Bower and NPM packages. 
 a personal website containing a portfolio, curriculum vitae, blog contact info etc. as well as a simple
 API for personal needs (e.g. serving data).
 
-This documentation was made to show how this website was hosted and can be used as a reference for 
+This documentation was made to show how this website was hosted and can be used as a reference for
 deploying other **simple websites**, like this one.
 
 
+## Deployment on Digital Ocean
 
 ## Deployment on Azure
 
@@ -22,5 +23,7 @@ npm install
 bower install
 ```
 
-to check your files and system environment, settings, processes etc., you can head to 
+to check your files and system environment, settings, processes etc., you can head to
 `https://{appname}.scm.azurewebsites.net/DebugConsole` in your browser
+
+## Deployment with Docker
